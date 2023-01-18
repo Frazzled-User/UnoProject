@@ -1,0 +1,22 @@
+public class UnoCard
+{
+    public static void main(String[] args) {
+        int min = 1;
+        int max1 = 9;
+        int max2 = 4;
+        int number = (int)(Math.random()*(max1-min+1)+min);
+        int cnumber = (int)(Math.random()*(max2-min+1)+min);
+        String color = "none";
+        if (cnumber == 1) {
+            color = "R";
+        } else if (cnumber == 2) {
+            color = "G";
+        } else if (cnumber == 3) {
+            color = "B";
+        } else if (cnumber == 4) {
+            color = "Y";
+        }
+        String card = (color + number);
+        System.out.println(card);
+    }
+}

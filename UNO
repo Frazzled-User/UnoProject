@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class UNO {
+    public static void main(String[] args) {
+        ArrayList<UnoCard> playerDeck = new ArrayList<UnoCard>();
+        ArrayList<UnoCard> computerDeck = new ArrayList<UnoCard>();
+
+        for (int i = 0; i < 7; i++) {
+            UnoCard card = new UnoCard();
+            playerDeck.add(card);
+        }
+
+        for (int i = 0; i < 7; i++) {
+            UnoCard card = new UnoCard();
+            computerDeck.add(card);
+        }
+
+        System.out.println("My hand");
+        for (UnoCard card : playerDeck) {
+            System.out.print(card.toString() + " ");
+        }
+
+        System.out.println("\nComputer hand");
+        for (UnoCard card : computerDeck) {
+            System.out.print(card.toString() + " ");
+        }
+    }
+}
